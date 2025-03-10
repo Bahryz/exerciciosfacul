@@ -1,0 +1,18 @@
+###
+
+GET http://localhost:5019/produto/listar
+
+### // buscar produto por id
+
+GET http://localhost:5019/produto/buscar/4
+
+###
+
+POST http://localhost:5019/produto/adicionar
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nome": "Monitor Gamer",
+  "preco": 1200.00
+}
