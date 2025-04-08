@@ -1,0 +1,16 @@
+@url_base = http://localhost:5207/api/produto   
+
+### Cadastrar produto
+
+POST {{url_base}}/cadastrar/produto
+Content-Type: application/json
+
+{
+    "nome" : "Bolacha Negresco"
+}
+
+###
+
+GET {{url_base}}/listar/produto
+
+###

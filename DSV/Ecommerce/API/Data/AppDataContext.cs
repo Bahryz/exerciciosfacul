@@ -10,5 +10,10 @@ public class AppDataContext : DbContext
 
     }
     public DbSet<Produto> Produtos { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 
+    public static implicit operator AppDataContext(ProdutoRepository v)
+    {
+        throw new NotImplementedException();
+    }
 }

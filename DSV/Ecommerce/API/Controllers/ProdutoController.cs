@@ -1,5 +1,6 @@
 using API.Data;
 using API.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -8,27 +9,38 @@ namespace API.Controllers
     [ApiController]
     public class ProdutoController : ControllerBase
     {
-        private readonly AppDataContext _context;
+        private readonly IProdutoRepository _produtoRepository;
 
-        public ProdutoController(AppDataContext context)
+        public ProdutoController(IProdutoRepository produtoRepository)
         {
-            _context = context;
+            _produtoRepository = produtoRepository;
         }
 
-        [HttpGet("helloworld")]
-        public IActionResult HelloWorld()
-        {
-            return Ok("Hello World");
-        }
+        // [HttpGet("helloworld")]
+        // public IActionResult HelloWorld()
+        // {
+        //     return Ok("Hello World");
+        // }
 
-        [HttpPost("cadastro")]
+        [HttpPost("cadastrar/produto")]
         public IActionResult Cadastrar([FromBody] Produto produto)
         {
             // Lógica para adicionar o produto no contexto
-            _context.Produtos.Add(produto);
-            _context.SaveChanges();
-
+            _produtoRepository.Cadastrar(produto);
             return Created("", produto);
+
         }
+
+        [HttpGet("listar/produto")]
+        public IActionResult Listar(){
+            var produtos = _produtoRepository.Listar();
+            return Ok(produtos);
+        }
+
+        [HttpPost("cadastrar/usuario")]
+        public IActionResult CadastrarUsuario([FromBody] Usuario usuario) {
+            _   
+        }
+
     }
 }

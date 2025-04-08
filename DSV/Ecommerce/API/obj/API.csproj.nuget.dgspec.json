@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\DSV\\Ecommerce\\API\\API.csproj": {}
+    "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\Nova pasta\\exerciciosfacul\\DSV\\Ecommerce\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\DSV\\Ecommerce\\API\\API.csproj": {
+    "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\Nova pasta\\exerciciosfacul\\DSV\\Ecommerce\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\DSV\\Ecommerce\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\Nova pasta\\exerciciosfacul\\DSV\\Ecommerce\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\DSV\\Ecommerce\\API\\API.csproj",
+        "projectPath": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\Nova pasta\\exerciciosfacul\\DSV\\Ecommerce\\API\\API.csproj",
         "packagesPath": "C:\\Users\\PEDROHENRIQUEMACHADO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\DSV\\Ecommerce\\API\\obj\\",
+        "outputPath": "C:\\Users\\PEDROHENRIQUEMACHADO\\Desktop\\Nova pasta\\exerciciosfacul\\DSV\\Ecommerce\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PEDROHENRIQUEMACHADO\\AppData\\Roaming\\NuGet\\NuGet.Config"
